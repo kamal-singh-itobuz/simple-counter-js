@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid grey;
+    padding: 2rem;
+    background-color: antiquewhite;
+    border-radius: 0.3rem;
+
+    h1{
+        font-size: 6rem;
+    }
+    button {
+        height: 2.5rem;
+        width: 7rem;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 0.3rem;
+        border: none;
+        cursor: pointer; 
+        transition: all 0.2s ease-out;
+    }
+    .plus {
+        background-color: green;
+        &:active{
+            box-shadow: 0 0 1rem green;
+        }
+    }
+    .minus {
+        background-color: red;
+        &:active{
+            box-shadow: 0 0 1rem red;
+        }
+    }
+    .reset {
+        background-color: black;
+        &:active{
+            box-shadow: 0 0 1rem black;
+        }
+    }
+}
+
